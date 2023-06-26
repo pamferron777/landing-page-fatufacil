@@ -1,0 +1,181 @@
+* {
+    font-family: 'Nunito', 'Sans-serif';
+}
+
+body {
+    background-color: #fff 101010;
+    color: #101010;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.img-logo {
+    width: 200px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    
+}
+.nav-menu > a {
+    text-decoration: none;
+}
+
+.nav-menu-item {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+
+}
+.nav-menu-item:hover{
+    text-decoration: underline;
+}
+
+a {
+    color: #101010;
+}
+
+a:hover {
+    color: #7A89BF;
+    transition: 0.3s all;
+}
+
+h1 {
+    font-weight: 200px;
+
+}
+
+#increva-se-btn {
+    border: 2px solid #7A89BF;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 24px;
+
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+    font-family: 'Nunito', 'Sans-serif';
+
+}
+
+span {
+    color: #7A89BF
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+
+}
+
+img {
+    width: 620px;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.botao {
+    height: 50px;
+    width: 70%;
+    background-color: #7A89BF;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+
+}
+.botao:hover {
+    background-color: #515b7e;
+}
+
+input {
+    margin-top: 30px;
+    height: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 5rem 0;
+    font-size: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    max-width: 980px;
+    margin: 0 auto;
+    grid-gap: 40px;
+}
+
+.card .user {
+    width: 100px;
+    border-radius: 100%;
+
+
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 40px;
+    box-shadow: 6px 6px 10px;
+    border-radius: 4px;
+
+}
+
+.star {
+    width: 20px;
+    flex-direction: row;
+}
+
+div.star {
+    display: flex;
+}
+
+header h2 {
+    text-align: center;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7A89BF;
+    color: white;
+    width: 100%;
+    text-align: center;
+   margin-top: 30px;
+  }
