@@ -230,6 +230,9 @@ header h2 {
     display: flex;
     justify-content: center;
 }
+.txt-center{
+    text-align: center;
+}
 
 
 /* Só vai acontecer se o dispositivo tiver 450px ou menos de largura */
