@@ -5,10 +5,17 @@
 body {
     background-color: #fff 101010;
     color: #101010;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px;
 }
+
 
 .img-logo {
     width: 200px;
@@ -19,6 +26,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -29,9 +37,30 @@ header {
 
 .nav-menu {
     list-style: none;
-    
+    padding: 0;
+    font-weight: bold;
 }
-.nav-menu > a {
+
+.nav-menu-item.active {
+    border-bottom: 4px solid #7A89BF;
+    color: #7A89BF;
+}
+
+.motivos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.motivos{
+    list-style: none;
+}
+.motivos>li::before {
+    content: '\2022';
+    margin: 0 4px;
+    color: #7A89BF;
+}
+
+.nav-menu>a {
     text-decoration: none;
 }
 
@@ -39,10 +68,12 @@ header {
     display: inline-block;
     margin: 20px;
     text-decoration: none;
+    padding: 0px;
 
 }
-.nav-menu-item:hover{
-    text-decoration: underline;
+
+.nav-menu-item:hover {
+    /* text-decoration: underline; */
 }
 
 a {
@@ -65,9 +96,13 @@ h1 {
 
 main {
     display: flex;
-    flex-direction: row;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 24px;
+}
+
+.motivos {
+    font-size: 24px;
 
 }
 
@@ -90,7 +125,11 @@ p {
 
 img {
     width: 620px;
+    max-width: 100%;
 }
+
+
+
 
 form {
 
@@ -111,6 +150,7 @@ form {
     border: none;
 
 }
+
 .botao:hover {
     background-color: #515b7e;
 }
@@ -132,13 +172,19 @@ h1 {
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    max-width: 980px;
-    margin: 0 auto;
-    grid-gap: 40px;
 }
+
+.card {
+    max-width: 300px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+
 
 .card .user {
     width: 100px;
@@ -152,8 +198,11 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 35px 40px;
-    box-shadow: 6px 6px 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-shadow: 6px 6px 10px #7A89BF;
     border-radius: 4px;
 
 }
@@ -170,12 +219,32 @@ div.star {
 header h2 {
     text-align: center;
 }
+
 .footer {
-    text-align: center;
-    padding: 20px;
     background-color: #7A89BF;
     color: white;
     width: 100%;
-    text-align: center;
-   margin-top: 30px;
-  }
+    margin-top: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Só vai acontecer se o dispositivo tiver 450px ou menos de largura */
+@media screen and (max-width: 450px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-motivo {
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .img-motivo {
+        display: none;
+    }
+}
